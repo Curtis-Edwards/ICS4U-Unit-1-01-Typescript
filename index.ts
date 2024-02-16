@@ -11,7 +11,8 @@ import { createPrompt } from 'bun-promptx'
 
 const lengthString = createPrompt('What length do you want your logs to be?(0.25, 0.5, 1): ')
 let lengthNumber = parseInt(lengthString.value)
-let numberOfLogs = 1100 / (20 / lengthNumber)
+let numberOfLogs = 0
+numberOfLogs = 1100 / (20 / lengthNumber)
 console.log('The truck can carry ${numberOfLogs} logs if they are ${lengthNumber}m long')
 
 const ageString = createPrompt('What is your age? ')
