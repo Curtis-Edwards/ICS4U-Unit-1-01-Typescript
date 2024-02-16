@@ -14,6 +14,9 @@ let lengthNumber = parseInt(lengthString.value)
 let numberOfLogs = 1100 / (20 / lengthNumber)
 console.log('The truck can carry ${numberOfLogs} logs if they are ${lengthNumber}m long')
 
-
+const ageString = createPrompt('What is your age? ')
+let ageNumber = parseInt(ageString.value)
+ageNumber = ageNumber - 10
+console.log(`Age is > ${ageNumber}`)
 
 console.log('\nDone.')
